@@ -1,0 +1,46 @@
+html {
+    font-family: 'PT Sans', sans-serif;
+    background-image: url("https://hd.unsplash.com/photo-1472214103451-9374bd1c798e");
+    background-size: cover;
+}
+
+/* hide the results and details by default */
+
+#results, #details {
+    display: none;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.9);
+    margin: auto;
+    margin-top: 20px;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+
+/* Select the img with an id="logo" */
+img#logo {
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+
+/* Will combine the following styles to both selct and button by putting a comma between them */
+select, button {
+    width: 100%;
+    background: black;
+    color: white;
+    font-size: 150%;
+}
+
+button {
+    border: none;
+/*    To make it a circle */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
