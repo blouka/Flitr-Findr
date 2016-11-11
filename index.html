@@ -12,8 +12,12 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet' /> 
         <link rel="stylesheet" href="css/main.css">
+        
+        
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -41,8 +45,8 @@
 <!--        This is the results section-->
         <section id="results">
             <a class="back button">Back</a>
+            <a class="toggle button">Map</a>
 
-            <h1></h1>
             <p>Venues in your area for your chosen sport</p>
 
             <ol>
@@ -67,6 +71,7 @@
                     <p>About this person</p>
                 </li>
             </ol>
+            <div id='map'></div>
         </section>
         
 <!--        This is the details section-->
@@ -83,13 +88,19 @@
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-<!--       Load firebase libary -->        
+    <!-- Load the mapbox js -->   
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js'></script>
+        <script src="js/mapbox.js"></script>
+    <!--       Load firebase libary -->        
         <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
         <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+    <!-- our own scripts -->    
         <script src="js/firebase.js"></script>
         <script src="js/filter.js"></script>
         <script src="js/show.js"></script>
+    <!-- Main.JS is the script that binds all the others -->
         <script src="js/main.js"></script>
+        
         
 
 
