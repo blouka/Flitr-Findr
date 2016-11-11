@@ -4,6 +4,9 @@ var homeDropdown = $('#home select')
 var homeSection = $('#home')
 var resultsSection = $('#results')
 var resultsBackButton = $('#results .back')
+var resultsToggleButton = $('#results .toggle')
+var resultsOL = $('#results OL')
+var resultsMap = $('#map')
 var detailsInfo = $('#details #info')
 var detailsBackButton = $('#details .back')
 var detailsSection = $('#details')
@@ -20,9 +23,6 @@ homeGoButton.click( function(){
     // filter+sort people by user selection
     var resultsList = filterAndSortList(peopleList, selectedOption);
     console.log(resultsList);
-    
-    // show the results in the #results section
-    var resultsOL = $('#results ol');
     
     
     
@@ -65,4 +65,43 @@ detailsBackButton.click( function(){
     detailsSection.hide()
     resultsSection.show()
     
+})
+
+// button to switch between list ad map
+resultsToggleButton.click( function() {
+    
+    console.log('clicked resultsToggleButton')
+    
+    // find out which element is currently visable
+    // is the list visable
+    var listDisplay = resultsOL.css('display') 
+    if (listDisplay == 'block') isListVisable = true
+    else isListVisable = false
+    
+    console.log(isListVisable)
+    
+    console.log(listDisplay)
+    // if the list is visable
+    if (isListVisable)
+    {
+       // we want to show the map and hide the list
+        resultsMap.show()
+        map.resize()
+        resultsOL.hide()
+        resultsToggleButton.html('List')
+        // change the button text to say "list"
+        
+    }
+    else
+    {
+      // we want to show the list and hide the map
+        resultsOL.show()
+        resultsMap.hide()
+        resultsToggleButton.html('Map')
+        // change the button text to say "Map"
+        
+        
+    }
+    
+   
 })
