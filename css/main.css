@@ -44,3 +44,9 @@ button {
     margin-top: 15px;
 }
 
+#map {
+    width: 100%;
+    height: 30rem; /* experiment with different heights */
+    display: none; /* map is hidden by default */
+}
+
