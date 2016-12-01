@@ -43,4 +43,6 @@ function filterAndSortList(completeList, selectedOption)
     });
 
     return sortedList;
+    
+    
 }

@@ -10,8 +10,10 @@ var resultsMap = $('#map')
 var detailsInfo = $('#details #info')
 var detailsBackButton = $('#details .back')
 var detailsSection = $('#details')
+var detailsInfo = $('#details #info');
 
-
+// define results list outside of any function
+var resultsList = []
 
 // tell the button to do something when we click it
 homeGoButton.click( function(){
@@ -21,12 +23,13 @@ homeGoButton.click( function(){
     console.log("you picked " + selectedOption)
     
     // filter+sort people by user selection
-    var resultsList = filterAndSortList(peopleList, selectedOption);
+    resultsList = filterAndSortList(peopleList, selectedOption);
     console.log(resultsList);
     
     
     
     showList(resultsList, resultsOL);
+    addMarkers(resultsList)
 
     
     function showDetails (data, interfaceElement) 
@@ -67,6 +70,8 @@ detailsBackButton.click( function(){
     
 })
 
+
+
 // button to switch between list ad map
 resultsToggleButton.click( function() {
     
@@ -105,3 +110,4 @@ resultsToggleButton.click( function() {
     
    
 })
+
