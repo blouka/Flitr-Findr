@@ -9,10 +9,11 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        
 
         <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet' /> 
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.css' rel='stylesheet' /> 
         <link rel="stylesheet" href="css/main.css">
         
         
@@ -28,18 +29,18 @@
         
 <!--        This is the home section-->
         <section id="home">
-            <img id="logo" src="img/logo.png">
+            <img id="logo" src="img/hlogo.png">
             <h1>I'd like somewhere I can play...</h1>
-            <select>
-                <option value="footballSkills">Football</option>
-                <option value="tennisSkills">Tennis</option>
-                <option value="hockeySkills">Hockey</option>
-                <option value="rugbySkills">Rugby</option>
-                <option value="basketballSkills">Basketball</option>
+            <select id="blue">
+                <option value="footballSkills">Zorb Football</option>
+                <option value="footgolfSkills">Foot Golf</option>
+                <option value="footpoolSkills">Foot Pool</option>
+                <option value="gokartSkills">Laser Go Kart</option>
+                <option value="archerytagSkills">Archery tag</option>
             </select>
             <button>Go</button> 
-            <p>Find a sport venue near you!</p>
-            <p>Pick a sport to get started.</p>
+    <!--        <p>Find a sport venue near you!</p>
+            <p>Pick a sport to get started.</p> -->
         </section>
         
 <!--        This is the results section-->
@@ -48,6 +49,7 @@
             <a class="toggle button">Map</a>
 
             <p>Venues in your area for your chosen sport</p>
+            <p1 class="paid">Paid</p1> <p2>Free</p2>
 
             <ol>
                 <li>
@@ -89,7 +91,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
     <!-- Load the mapbox js -->   
-        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js'></script>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.js'></script>
         <script src="js/mapbox.js"></script>
     <!--       Load firebase libary -->        
         <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
