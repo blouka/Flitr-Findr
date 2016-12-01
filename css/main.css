@@ -1,7 +1,9 @@
 html {
     font-family: 'PT Sans', sans-serif;
-    background-image: url("https://hd.unsplash.com/photo-1472214103451-9374bd1c798e");
-    background-size: cover;
+    background-image: url("http://www.newdesignfile.com/postpic/2013/02/free-vector-football-field_15162.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+   
 }
 
 /* hide the results and details by default */
@@ -10,21 +12,20 @@ html {
     display: none;
 }
 
-section {
-    background: rgba(255, 255, 255, 0.9);
-    margin: auto;
-    margin-top: 20px;
-    max-width: 500px;
-    padding: 20px;
-    border-radius: 15px;
-    
+
+
+h1{
+    color: black;
 }
+
+
 
 /* Select the img with an id="logo" */
 img#logo {
     margin: auto;
     width: 50%;
     display: block;
+    height: 70%;
 }
 
 /* Will combine the following styles to both selct and button by putting a comma between them */
@@ -32,17 +33,99 @@ select, button {
     width: 100%;
     background: black;
     color: white;
-    font-size: 150%;
+    font-size: 170%;
+} 
+
+
+#blue {
+  background-color:black;
+  transition: all 0.3s ease 0s;
 }
+
+#blue:hover {
+  background-color: #c11717;
+}
+
+
 
 button {
     border: none;
 /*    To make it a circle */
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-top: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70%;
+    margin-top: 25px;
+    background-color: black;
+    margin-left: 45%;
+    transition: all 0.3s ease 0s;
 }
+
+button:hover {
+  background: #c11717;
+}
+
+.button
+{
+    cursor: pointer;
+    
+}
+
+.back  {
+    margin-top: 15px;
+    color: white;
+    background-color: #c11717;
+}
+
+.toggle {
+    margin-top: 15px;
+    color: white;
+    background-color: #c11717;
+    
+    
+}
+
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+li:hover {
+    background-color: #c11717;
+    border-radius: 10px;
+    transition: all 1s;
+    color: white;
+}
+
+li {
+    font-size: 0.7em;
+    padding: 5px;
+    text-align: center;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: thin;
+    background-color: rgba(236, 206, 206, 0.22);
+    color: black;
+    transition: all 1s;
+}
+
+li img {
+    max-height: 150px;
+    margin: 0;
+    padding: 5px;
+    border-radius: 10px;
+    left: 10px;
+}
+
+#results li h2 {
+    font-size: 2em;
+    
+}
+
+#results .toggle
+{
+    float: right;
+}
+
 
 #map {
     width: 100%;
@@ -50,3 +133,60 @@ button {
     display: none; /* map is hidden by default */
 }
 
+.marker {
+  border: none;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #BF2121;
+  transform: translate(10px, 20px, 0);
+}
+
+.marker.free {
+ background-color: #BF2121;   
+
+}
+
+.marker.paid {
+ background-color: #BF8000;   
+
+}
+
+p1 {
+  color: #BF8000;  
+  font-weight: 800;
+}
+
+p2 {
+  color:#BF2121;  
+  font-weight: 800;  
+}
+
+P {
+    font-size: 150%;
+}
+
+#details {
+    text-align: center;
+    
+}
+#details img {
+    max-height: 400px;
+    border-radius: 10px;
+    display: inline;
+}
+
+section {
+    background: rgba(235, 244, 235, 0.85);
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: limegreen;
+    border-width: 1px;
+    padding: 5px;
+    padding-left: 13px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
