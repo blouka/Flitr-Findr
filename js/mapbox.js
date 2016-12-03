@@ -54,14 +54,14 @@ else div.className = 'marker paid'
     
     
     // pOOpup
-    // 1. update the details section with data from the selected result
-    // 2. hide the results section
-    // 3. show the details section
-    var clickSteps = 'showDetails(resultsList['+i+'], detailsInfo); resultsSection.hide(); detailsSection.show(); '
-    var popupHTML = '<a onclick="' + clickSteps + '">' + dataItem.name + '</a>'
-    var popup = new mapboxgl.Popup({closeButton:false})
-    popup.setHTML(popupHTML)
-    marker.setPopup(popup)
+    //1. update the details section
+    //2.hide the results section
+    //3.show the details section
+    var clickSteps = 'showDetails(resultsList['+i+'], detailsInfo); resultsSection.hide(); detailsSection.show();'
+var popupHTML = '<a onclick="' + clickSteps + '">' + dataItem.name + '</a>'
+var popup = new mapboxgl.Popup({closeButton:false})
+popup.setHTML(popupHTML)
+marker.setPopup(popup)
   }
 }
 
